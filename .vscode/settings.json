@@ -1,0 +1,36 @@
+{
+    // Python関連
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+    "[python]": {
+        "editor.tabSize": 4,
+    },
+    "autoDocstring.docstringFormat": "google",
+    // エディタ・ファイル関連
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.exclude": { // ファイルブラウザに表示しない
+        "**/.git": true,
+        "**/*.pyc": true,
+        "**/__pycache__": true,
+        "**/.venv": true,
+    },
+    // 保存時に実行するコードアクション
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+        "source.fixAll.markdownlint": true, // Markdownをフォーマット
+    },
+    // pytest関連
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+}
